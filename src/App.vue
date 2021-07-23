@@ -2,6 +2,7 @@
   <div id="app">
     <nav-bar-component />
     <side-bar-component />
+    <router-view />
   </div>
 </template>
 
@@ -13,7 +14,7 @@ export default {
   name: 'Teste Tray',
   components: {
     NavBarComponent,
-    SideBarComponent
+    SideBarComponent,
   }
 }
 </script>
