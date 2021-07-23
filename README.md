@@ -1,4 +1,4 @@
-# tray
+# Front end para a Tray
 
 ## Project setup
 ```

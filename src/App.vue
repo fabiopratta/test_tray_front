@@ -1,17 +1,19 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <nav-bar-component />
+    <side-bar-component />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavBarComponent from './components/NavBarComponent.vue'
+import SideBarComponent from './components/SideBarComponent.vue'
 
 export default {
-  name: 'App',
+  name: 'Teste Tray',
   components: {
-    HelloWorld
+    NavBarComponent,
+    SideBarComponent
   }
 }
 </script>
@@ -23,6 +25,15 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+nav {
+  text-align: left;
+  padding: 30px;
+}
+
+button {
+      border-style: none;
+      background-color: transparent;
 }
 </style>
