@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
-    Vendas
+    Vendas m
+    <router-view></router-view>
   </div>
 </template>
 

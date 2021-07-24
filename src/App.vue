@@ -11,7 +11,7 @@ import NavBarComponent from './components/NavBarComponent.vue'
 import SideBarComponent from './components/SideBarComponent.vue'
 
 export default {
-  name: 'Teste Tray',
+  name: 'App',
   components: {
     NavBarComponent,
     SideBarComponent,

@@ -2,23 +2,29 @@
   "name": "tray",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "bootstrap": "^5.0.2",
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.15.2",
     "sass": "^1.35.2",
     "sass-loader": "10",
     "vue": "^2.6.14",
-    "vue-router": "^3.5.2"
+    "vue-good-table": "^2.21.10",
+    "vue-resource": "^1.5.3",
+    "vue-router": "^3.5.2",
+    "vue-sweetalert2": "^5.0.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.13",
     "@vue/cli-plugin-eslint": "~4.5.13",
+    "@vue/cli-plugin-router": "~4.5.0",
     "@vue/cli-service": "~4.5.13",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.31.0",

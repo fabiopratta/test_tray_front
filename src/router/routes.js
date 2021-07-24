@@ -1,6 +1,10 @@
-import Vendedores from '../views/Vendedores.vue'
+import Vendedores from '../views/vendedores/Vendedores.vue'
 import Home from '../views/Home.vue'
 import Vendas from '../views/Vendas.vue'
+import NovoVendedor from "@/views/vendedores/NovoVendedor";
+import VendedoresListar from "@/views/vendedores/VendedoresListar";
+import AtualizarVendedor from "@/views/vendedores/AtualizarVendedor";
+import VendasVendedor from "@/views/vendedores/VendasVendedor";
 
 const routes = [
     {
@@ -9,7 +13,30 @@ const routes = [
     },
     {
       path: '/vendedores',
-      component: Vendedores
+      name: 'vendedores',
+      component: Vendedores,
+        children: [
+            {
+                path: '',
+                name: 'vendedores.listar',
+                component: VendedoresListar
+            },
+            {
+                path: 'novo',
+                name: 'vendedores.novo',
+                component: NovoVendedor
+            },
+            {
+                path: 'atualizar/:id',
+                name: 'vendedores.atualizar',
+                component: AtualizarVendedor
+            },
+            {
+                path: 'vendas/:id',
+                name: 'vendedores.vendas',
+                component: VendasVendedor
+            }
+        ]
      },
      {
       path: '/vendas',
