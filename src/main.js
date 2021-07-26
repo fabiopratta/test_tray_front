@@ -6,6 +6,7 @@ import router from './router/router';
 import Axios from 'axios';
 import VueGoodTablePlugin from 'vue-good-table';
 import VueSweetalert2 from 'vue-sweetalert2';
+import VueTheMask from 'vue-the-mask'
 
 import 'vue-good-table/dist/vue-good-table.css'
 import 'bootstrap/dist/css/bootstrap.css'
@@ -19,6 +20,7 @@ Vue.use(IconsPlugin);
 Vue.use(VueResource);
 Vue.use(VueGoodTablePlugin);
 Vue.use(VueSweetalert2);
+Vue.use(VueTheMask)
 
 Vue.config.productionTip = false
 

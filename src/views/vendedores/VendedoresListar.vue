@@ -13,9 +13,9 @@
           :columns="colunas"
           :rows="vendedores"
           :pagination-options="{
-            enabled: true
+            enabled: true,
           }"  >
-
+        
         <template slot="table-row" slot-scope="props">
             <span v-if="props.column.field == 'acao'">
               <b-button variant="danger" v-on:click="apagar(props.row.id)">
@@ -38,9 +38,6 @@ import VendedoresService from '../../service/VendedoresService'
 
 export default {
   name: 'VendedoresListar',
-  components: {
-
-  },
   data() {
     return {
       colunas: [

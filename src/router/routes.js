@@ -1,6 +1,6 @@
 import Vendedores from '../views/vendedores/Vendedores.vue'
 import Home from '../views/Home.vue'
-import Vendas from '../views/Vendas.vue'
+import Vendas from '../views/vendas/Vendas.vue'
 import NovoVendedor from "@/views/vendedores/NovoVendedor";
 import VendedoresListar from "@/views/vendedores/VendedoresListar";
 import AtualizarVendedor from "@/views/vendedores/AtualizarVendedor";
